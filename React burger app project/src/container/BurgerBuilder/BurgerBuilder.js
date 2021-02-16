@@ -67,8 +67,7 @@ class BurgerBuilder extends Component {
                 <Burger p_ingredients={this.state.ingredients} />
                 <BuildControls addedIngre={this.addIngredientHandler}
                     removeIngre={this.removeIngredientHandler}
-                    // Please handle this disableBtnHandler
-                    // disabled={this.disableBtnHandler}
+                    disabled={disableBtn}
                 />
             </React.Fragment>
         );

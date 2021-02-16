@@ -25,7 +25,7 @@ const BuildControls = (props) => (
                     props.removeIngre(ctrl.type)
                 }}
 
-                // disabled={props.disabled[ctrl.type]}
+                disabled={props.disabled[ctrl.type]}
 
             />
         ))}
@@ -33,5 +33,6 @@ const BuildControls = (props) => (
 
     </div>
 );
+
 
 export default BuildControls;
