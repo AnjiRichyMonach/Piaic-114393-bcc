@@ -21,6 +21,12 @@ const BuildControls = (props) => (
                 added={() => {
                     props.addedIngre(ctrl.type)
                 }}
+                remove={() => {
+                    props.removeIngre(ctrl.type)
+                }}
+
+                disabled={props.disabled[ctrl.type]}
+
             />
         ))}
 
