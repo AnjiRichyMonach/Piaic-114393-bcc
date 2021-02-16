@@ -7,7 +7,6 @@ const Layout = (props) => {
         <React.Fragment>
             <div>tool bar</div>
             <main>{props.children}</main>
-            <BuildControls />
         </React.Fragment>
     )
 }

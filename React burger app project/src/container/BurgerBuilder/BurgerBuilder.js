@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import Burger from '../../components/Layout/Burger/Burger'
-import BuildControl from '../../components/Layout/Burger/BurgerControls/BurgerControl/BurgerControl'
 import BuildControls from '../../components/Layout/Burger/BurgerControls/BuildControls'
 
 const INGREDIENT_PRICE = {
@@ -68,7 +67,9 @@ class BurgerBuilder extends Component {
                 <Burger p_ingredients={this.state.ingredients} />
                 <BuildControls addedIngre={this.addIngredientHandler}
                     removeIngre={this.removeIngredientHandler}
-                    disabled={this.disableBtnHandler} />
+                    // Please handle this disableBtnHandler
+                    // disabled={this.disableBtnHandler}
+                />
             </React.Fragment>
         );
     }
